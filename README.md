@@ -1,12 +1,6 @@
 # FilmTools · seconds2minutes
 
-**PHP implementation for Excel's mround function: Returns a number rounded to the nearest multiple of another number.**
-
-[![Build Status](https://travis-ci.org/filmtools/mround.svg?branch=master)](https://travis-ci.org/filmtools/mround)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/filmtools/mround/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/filmtools/mround/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/filmtools/mround/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/filmtools/mround/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/filmtools/mround/badges/build.png?b=master)](https://scrutinizer-ci.com/g/filmtools/mround/build-status/master)
-
+**Formats seconds to 'mm:ss' or 'hh:mm:ss'**
 
 
 
@@ -20,7 +14,7 @@ $ composer require filmtools/secondstominutes
 
 ## Usage
 
-The **seconds2minutes** function is namespaced, so you will have to mention it in your `use` statements:
+The **seconds2minutes** function is namespaced, so you will have to mention it in your `use` statements. There is also a callable class, **SecondsToMinutes.**
 
 ```php
 use function FilmTools\SecondsToMinutes\seconds2minutes;
