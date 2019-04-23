@@ -1,0 +1,50 @@
+{
+	"name": "filmtools/secondstominutes",
+
+	"type": "library",
+
+	"description": "Formats seconds to 'mm:ss' or 'hh:mm:ss'",
+
+	"keywords": [ "time", "seconds", "minutes"],
+
+	"license": "MIT",
+
+  "support": {
+    "issues": "https://github.com/filmtools/secondstominutes/issues"
+  },
+
+	"authors": [
+		{
+			"name":  "Carsten Witt",
+			"role":  "Developer"
+		}
+	],
+
+	"autoload": {
+		"psr-4": {
+			"FilmTools\\SecondsToMinutes\\": "src/"
+		},
+		"files": [
+			"src/functions.php"
+		]
+	},
+
+  	"autoload-dev": {
+  	  	"psr-4": { "tests\\": "tests/src" }
+  	},
+
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpunit/phpunit": "^5.7|^6.0|^7.0",
+        "spatie/phpunit-watcher": "^1.8"
+    },
+
+    "scripts": {
+          "phpunit": "phpunit --colors=auto",
+          "watch": "phpunit-watcher watch",
+          "test": [
+              "@phpunit"
+          ]
+    }
+}
+
